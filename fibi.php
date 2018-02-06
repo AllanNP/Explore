@@ -23,7 +23,9 @@ for ($n = 0;; $n++)
     {
         break;
     }
-
+    if((fibonacci($n)%2)==0)
+    {
     $sum += fibonacci($n);
+    }
 }
 echo $sum;
