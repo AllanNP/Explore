@@ -1,0 +1,4 @@
+SELECT name , DAYOFYEAR(bdays)-DAYOFYEAR(NOW()) as days
+FROM users
+WHERE (DAYOFYEAR(bdays)-DAYOFYEAR(NOW()))<30 and (DAYOFYEAR(bdays)-DAYOFYEAR(NOW()))>0
+ORDER BY days DESC
